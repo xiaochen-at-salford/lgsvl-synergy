@@ -1,7 +1,7 @@
 #!/bin/sh
 
 docker run -ti \
-     --runtime=nvidia \
+     --gpus all \
      --net=host \
      -e DISPLAY \
      -e XAUTHORITY=/tmp/.Xauthority \
